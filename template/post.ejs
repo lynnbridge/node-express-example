@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <h1>Our Blogs</h1>
+    <% if(post){ %>
+      <h2 class="title"><%= post["title"] %></h2>
+      <div class="text"><%= post["description"] %></div>
+    <% } else { %>
+       <div class="">Nothing is here</div>
+    <% } %>
+
+  </body>
+</html>
